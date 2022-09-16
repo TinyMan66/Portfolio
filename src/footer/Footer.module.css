@@ -1,0 +1,26 @@
+.footerBlock {
+    min-height: 100vh;
+    background-color: #ebffe3;
+    padding: 50px 0;
+}
+.footerContainer {
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.title {
+    background-color: #dde6ee;
+}
+
+.socialContainer {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+.social {
+    height: 60px;
+    width: 60px;
+    background-color: #778898;
+}
