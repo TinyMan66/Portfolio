@@ -1,0 +1,28 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.skill {
+  align-items: center;
+  background-color: $bgSecondColor;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+
+  .icon {
+    background-color: lightslategrey;
+    height: 60px;
+    width: 60px;
+  }
+
+  h3 {
+    @include text($TitleFontFamily, 20px, 600, 1.2);
+    color: $primaryColor;
+  }
+
+  .description {
+    @include text($TextFontFamily, 16px, 400, 1.8);
+  }
+}
