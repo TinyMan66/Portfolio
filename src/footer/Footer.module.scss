@@ -18,9 +18,11 @@
       width: 280px;
 
       .social {
-        background-color: #778898;
+        background-color: $bgColor;
         height: 60px;
         width: 60px;
+        font-size: 50px;
+        color: $primaryColor;
       }
     }
 
