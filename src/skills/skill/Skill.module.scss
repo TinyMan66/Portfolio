@@ -12,9 +12,17 @@
   width: 250px;
 
   .icon {
-    background-color: lightslategrey;
+    background-color: $bgColor;
     height: 60px;
     width: 60px;
+    font-size: 50px;
+    color: $primaryColor;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
   }
 
   h3 {
