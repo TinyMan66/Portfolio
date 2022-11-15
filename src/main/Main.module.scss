@@ -14,14 +14,23 @@
     }
 
     h1 {
-      //@include text($TitleFontFamily, 25px, 600, 1.2);
+      @include text($TitleFontFamily, 25px, 500, 1.2);
       color: $primaryColor;
+      letter-spacing: 1px;
+      margin: 0 0 5px;
+      text-transform: uppercase;
     }
   }
 
   .photo {
+    align-items: center;
     background-color: #dde6ee;
+    background-position: center;
+    background-size: cover;
+    display: flex;
     height: 400px;
+    justify-content: center;
+    position: relative;
     width: 300px;
   }
 }
