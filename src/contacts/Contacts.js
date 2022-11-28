@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Contacts.module.scss';
 import styleContainer from '../../src/common/styles/Container.module.css'
 import {Title} from "../common/components/title/Title";
+import {Button} from "../common/components/button/Button";
 
 export const Contacts = () => {
     return (
@@ -13,7 +14,7 @@ export const Contacts = () => {
                     <input type="text"/>
                     <textarea></textarea>
                 </form>
-                <a className={style.button} href="/#">Send</a>
+                <Button path={"/#"} buttonName={"Send"}/>
             </div>
         </div>
     );

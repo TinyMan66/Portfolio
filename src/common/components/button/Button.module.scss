@@ -1,0 +1,17 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/mixins';
+
+.button {
+  background-color: $primaryColor;
+  color: $textColor;
+  padding: 0 33px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 26px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  @include text($TextFontFamily, 15px, 500, 46px);
+}
