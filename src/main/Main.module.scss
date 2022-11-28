@@ -6,19 +6,24 @@
   height: 100vh;
 
   .greeting {
-    background-color: $bgSecondColor;
+    //background-color: $bgSecondColor;
     width: 300px;
 
     span, p {
-      @include text($TextFontFamily, 16px, 400, 1.8);
+      @include text($TextFontFamily, 18px, 400, 1.8);
     }
 
     h1 {
-      @include text($TitleFontFamily, 25px, 500, 1.2);
-      color: $primaryColor;
+      @include text($TitleFontFamily, 55px, 700, 1.2);
       letter-spacing: 1px;
       margin: 0 0 5px;
       text-transform: uppercase;
+
+      span {
+        @include text($TitleFontFamily, 55px, 900, 1.2);
+        position: relative;
+        color: $primaryColor;
+      }
     }
   }
 

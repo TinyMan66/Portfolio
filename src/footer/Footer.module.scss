@@ -10,6 +10,11 @@
     flex-direction: column;
     justify-content: flex-start;
 
+    .name {
+      @include text($TitleFontFamily, 20px, 400, 1.8);
+      text-transform: uppercase;
+    }
+
     .socialContainer {
       display: flex;
       justify-content: space-between;

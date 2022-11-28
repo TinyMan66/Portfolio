@@ -13,7 +13,9 @@ export const Main = () => {
             <div className={styleContainer.container}>
                 <div className={style.greeting}>
                     <span>Hi There </span>
-                    <h1>I'm Diana Lipanova</h1>
+                    <h1>
+                        I'm <span>Diana Lipanova</span>
+                    </h1>
                     <p>A Frontend Developer</p>
                 </div>
                 <div className={style.photo} style={mPhoto}></div>

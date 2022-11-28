@@ -2,7 +2,6 @@
 @import '../../styles/sass/mixins';
 
 .title {
-  @include text($TitleFontFamily, 36px, 300, 1.2);
   letter-spacing: 5px;
   margin: 0 0 30px;
   position: relative;
@@ -20,6 +19,7 @@
   }
 
   h2 {
-    margin: 0;
+    @include text($TitleFontFamily, 55px, 900, 1.2);
+    position: relative;
   }
 }

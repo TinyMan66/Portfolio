@@ -23,21 +23,43 @@
         width: 100%;
       }
 
+
       input, textarea {
         width: 100%;
         background-color: $bgSecondColor;
         @include text($TextFontFamily, 16px, 400, 1.8);
+        height: 46px;
+        border-radius: 30px;
+        border: 1px solid #444;
+        outline: none;
+        box-shadow: none !important;
+        overflow: visible;
+        display: block;
+        padding: 0.375rem 0.75rem;
+        line-height: 1.5;
+        margin-bottom: 30px;
+
+        //for the text-area:
+
+        //height: 130px;
+        //overflow: auto;
+        //resize: vertical;
       }
     }
 
     .button {
       background-color: $primaryColor;
       color: $textColor;
-      padding: 10px 25px;
+      padding: 0 33px;
       position: relative;
       text-decoration: none;
       user-select: none;
       z-index: 1;
+      cursor: pointer;
+      border-radius: 26px;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      @include text($TextFontFamily, 15px, 500, 46px);
     }
   }
 }

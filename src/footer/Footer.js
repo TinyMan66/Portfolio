@@ -9,8 +9,7 @@ export const Footer = () => {
     return (
         <div className={style.footerBlock}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                {/*<h2 className={style.title}>Diana Lipanova</h2>*/}
-                <Title text={"Diana Lipanova"}/>
+                <Title titleStyle={style.name} text={"Diana Lipanova"}/>
                 <div className={style.socialContainer}>
                     <div className={style.social}><FontAwesomeIcon icon={faLinkedin}/></div>
                     <div className={style.social}><FontAwesomeIcon icon={faFacebook}/></div>
