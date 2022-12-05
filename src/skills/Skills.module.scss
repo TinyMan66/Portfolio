@@ -2,7 +2,8 @@
 
 .skillsBlock {
   background-color: $bgColor;
-  min-height: 100vh;
+  //min-height: 100vh;
+  height: fit-content;
   padding: 50px 0;
 
   .skillsContainer {
