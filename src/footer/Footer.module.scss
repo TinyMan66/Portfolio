@@ -7,32 +7,56 @@
   padding: 50px 0;
 
   .footerContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-
+    @include container();
+    @include flex(column, flex-start, center, wrap);
+    //padding: 100px 0 20px;
     .name {
       @include text($TitleFontFamily, 20px, 400, 1.8);
       text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
     .socialContainer {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
+      @include flex(row, space-between, center, nowrap);
+      //margin-bottom: 20px;
+      margin-top: 20px;
       padding: 20px 0;
-      width: 280px;
+      width: 300px;
+      @media screen and (max-width: 505px) {
+        width: 100%;
+      }
 
-      .social {
+      .socialIcon {
         background-color: $bgColor;
         height: 60px;
         width: 60px;
         font-size: 50px;
-        color: $primaryColor;
+        @media screen and (max-width: 380px) {
+          width: 50px;
+          height: 50px;
+        }
+
+        a {
+          width: 100%;
+          height: 100%;
+          @include flex(row, center, center, nowrap);
+
+          .icon {
+            color: $primaryColor;
+
+            &:hover {
+              color: #ffcc00;
+              transition: all 0.3s ease-in-out 0s;
+            }
+          }
+        }
       }
     }
 
-    span {
+    .copyright {
+      margin-top: 40px;
       @include text($TextFontFamily, 16px, 400, 1.8);
+      opacity: 0.6;
     }
   }
 }
