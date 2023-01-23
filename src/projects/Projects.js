@@ -20,8 +20,8 @@ export const Projects = () => {
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <Title text={"My Projects"}/>
                 <div className={style.projects}>
-                    <Project style={social} title={"Social Network"} description={"lorem jhdvjvhdvbdbvdv jhdghvhvdhvdjhv ddvd dhfdhbdvb"}/>
-                    <Project style={todoList} title={"Todo List"} description={"lorem jhdvjvhdvbdbvdv jhdghvhvdhvdjhv"}/>
+                    <Project path={"https://tinyman66.github.io/my-samurai-way/"} style={social} title={"Social Network"} description={"lorem jhdvjvhdvbdbvdv jhdghvhvdhvdjhv ddvd dhfdhbdvb"}/>
+                    <Project path={"/#"} style={todoList} title={"Todo List"} description={"lorem jhdvjvhdvbdbvdv jhdghvhvdhvdjhv"}/>
                 </div>
             </div>
         </div>

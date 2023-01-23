@@ -6,7 +6,7 @@ export const Project = (props) => {
     return (
         <div className={style.project}>
             <div className={style.imgContainer} style={props.style}>
-                <Button path={"/#"} buttonName={"Look at"}/>
+                <Button path={props.path} buttonName={"Look at"}/>
             </div>
             <div className={style.projectInfo}>
                 <h3 className={style.projectTitle}>{props.title}</h3>
