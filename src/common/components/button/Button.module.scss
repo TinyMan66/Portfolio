@@ -2,7 +2,7 @@
 @import '../../styles/sass/mixins';
 
 .button {
-  background-color: $buttonColor;
+  background-color: $primaryColor;
   color: $textColor;
   padding: 0 33px;
   position: relative;
@@ -14,4 +14,9 @@
   letter-spacing: .5px;
   text-transform: uppercase;
   @include text($TextFontFamily, 15px, 500, 46px);
+
+  &:hover {
+    background-color: #ffcc00;
+    transition: all 0.3s ease-in-out 0s;
+  }
 }
