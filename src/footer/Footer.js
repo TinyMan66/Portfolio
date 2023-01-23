@@ -43,7 +43,7 @@ export const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <span className={style.copyright}> 2022 All rights reserved</span>
+                <span className={style.copyright}> 2022, All rights reserved</span>
             </div>
         </div>
     );

@@ -14,7 +14,6 @@
   margin-bottom: 10px;
 
   .iconContainer {
-    //border: 1px solid white;
     background-color: $bgSecondColor;
     transform: rotate(45deg);
     margin-bottom: 40px;
@@ -28,8 +27,14 @@
     display: flex;
     justify-content: center;
     position: relative;
+
     .icon {
       transform: rotate(-45deg);
+    }
+
+    img {
+      height: 50px;
+      width: 50px;
     }
   }
 

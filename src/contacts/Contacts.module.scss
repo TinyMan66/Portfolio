@@ -46,6 +46,7 @@
           -webkit-box-shadow: 0 0 0 1000px #252527;
           //transition: background-color 5000s case-in-out 0s;
           transition: width 2s;
+
           &:focus {
             border: 2px solid $bgSecondColor;
           }
@@ -54,6 +55,7 @@
 
       .formArea {
         height: calc(1.5em + .75rem + 2px);
+
         &:focus {
           border: 1px solid transparent;
           transition: all 0.4s ease-in-out 0s;
@@ -64,6 +66,7 @@
         min-height: 130px;
         overflow: auto;
         resize: vertical;
+
         &:focus {
           border: 1px solid transparent;
           transition: all 0.4s ease-in-out 0s;
@@ -74,6 +77,7 @@
         @extend .button;
         align-self: center;
         margin-top: 15px;
+        border: none;
       }
     }
   }
