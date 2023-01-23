@@ -3,7 +3,7 @@
 
 .skill {
   align-items: center;
-  background-color: $bgSecondColor;
+  //background-color: $bgSecondColor;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -13,10 +13,13 @@
   width: 250px;
   margin-bottom: 10px;
 
-  .icon {
-    background-color: $bgColor;
-    height: 60px;
-    width: 60px;
+  .iconContainer {
+    //border: 1px solid white;
+    background-color: $bgSecondColor;
+    transform: rotate(45deg);
+    margin-bottom: 40px;
+    height: 75px;
+    width: 75px;
     font-size: 50px;
     color: $primaryColor;
     align-items: center;
@@ -25,6 +28,9 @@
     display: flex;
     justify-content: center;
     position: relative;
+    .icon {
+      transform: rotate(-45deg);
+    }
   }
 
   h3 {
