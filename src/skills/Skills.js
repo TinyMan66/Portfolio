@@ -4,7 +4,7 @@ import styleContainer from '../../src/common/styles/Container.module.css'
 import {Skill} from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
 import { faReact, faHtml5, faCss3Alt, faJs } from '@fortawesome/free-brands-svg-icons';
-import tsImg from './../asserts/images/tsIcon.png';
+import tsImg from '../assets/images/tsIcon.png';
 
 export const Skills = () => {
     const tsIcon = {
