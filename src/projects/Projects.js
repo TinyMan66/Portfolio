@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Projects.module.scss';
-import styleContainer from '../../src/common/styles/Container.module.css'
 import {Project} from './project/Project';
 import {Title} from '../common/components/title/Title';
 import todoImage from '../assets/images/todolistFake.jpeg';
@@ -19,7 +18,7 @@ export const Projects = () => {
     return (
         <div id="projects" className={style.projectsBlock}>
             <Fade bottom>
-                <div className={`${styleContainer.container} ${style.projectsContainer}`}>
+                <div className={style.projectsContainer}>
                     <Title text={"My Projects"}/>
                     <div className={style.projects}>
                         <Project path={"https://tinyman66.github.io/my-samurai-way/"} style={social}
