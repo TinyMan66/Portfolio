@@ -8,7 +8,7 @@ export const BurgerNav = () => {
     return (
         <div className={style.burgerNav}>
             <div className={isOpen ? `${style.burgerNavItems} ${style.show}` : style.burgerNavItems}>
-                <a href="/#">Main</a>
+                <a href="">Main</a>
                 <Link to="skills"
                       activeClass={style.active}
                       spy={true}
