@@ -5,11 +5,11 @@ import {Fade} from "react-awesome-reveal";
 
 export const Contacts = () => {
     return (
-        <div className={style.contactsBlock}>
+        <div id="contacts" className={style.contactsBlock}>
             <Fade bottom>
                 <div className={style.contactsContainer}>
                     <Title text={"Contacts"}/>
-                    <Fade left className={style.fade}>
+                    <Fade direction={"left"} className={style.fade}>
                         <form className={style.form}>
                             <input type="text" className={style.formArea} placeholder="Name"/>
                             <input type="text" className={style.formArea} placeholder="e-mail"/>

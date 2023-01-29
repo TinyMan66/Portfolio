@@ -17,7 +17,7 @@ export const Projects = () => {
     };
 
     return (
-        <div className={style.projectsBlock}>
+        <div id="projects" className={style.projectsBlock}>
             <Fade bottom>
                 <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                     <Title text={"My Projects"}/>

@@ -9,5 +9,15 @@
 
   a {
     color: $textColor;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      color: $primaryColor;
+    }
+  }
+
+  .active {
+    color: $primaryColor;
   }
 }

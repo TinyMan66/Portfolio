@@ -9,7 +9,7 @@ import { Fade } from "react-awesome-reveal";
 export const Skills = () => {
     const tsIcon = tsImg
     return (
-        <div className={style.skillsBlock}>
+        <div id="skills" className={style.skillsBlock}>
             <Fade bottom>
                 <div className={style.skillsContainer}>
                     <Title text={"My Skills"}/>
