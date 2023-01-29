@@ -3,6 +3,8 @@ import style from './Main.module.scss';
 import Particles from 'react-particles'
 import {useCallback} from "react";
 import {loadFull} from "tsparticles";
+import {Fade} from "react-awesome-reveal";
+import ReactTypingEffect from 'react-typing-effect';
 
 const particlesOpt = {
     particles: {
@@ -42,18 +44,20 @@ export const Main = () => {
     return (
         <div className={style.mainBlock}>
             <Particles id="tsparticles" init={particlesInit} loaded={particlesLoaded} className={style.particles} options={particlesOpt}/>
-            <div className={style.container}>
-                <div className={style.greeting}>
-                    <p>Hi There!</p>
-                    <h1>
-                        I'm <span>Diana Lipanova</span>
-                    </h1>
-                    <p>A Front-end Developer</p>
+            <Fade bottom className={style.fade}>
+                <div className={style.container}>
+                    <div className={style.greeting}>
+                        <p>Hi There!</p>
+                        <h1>
+                            I'm <span>Diana Lipanova</span>
+                        </h1>
+                        <ReactTypingEffect text="A Front-end Developer."/>
+                    </div>
+                    <div className={style.photo}>
+                        <div className={style.image}></div>
+                    </div>
                 </div>
-                <div className={style.photo}>
-                    <div className={style.image}></div>
-                </div>
-            </div>
+            </Fade>
         </div>
     );
 }

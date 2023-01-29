@@ -5,6 +5,7 @@ import {Project} from './project/Project';
 import {Title} from '../common/components/title/Title';
 import todoImage from '../assets/images/todolistFake.jpeg';
 import socialImage from '../assets/images/socialFake.png';
+import {Fade} from "react-awesome-reveal";
 
 export const Projects = () => {
     const social = {
@@ -17,13 +18,18 @@ export const Projects = () => {
 
     return (
         <div className={style.projectsBlock}>
-            <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-                <Title text={"My Projects"}/>
-                <div className={style.projects}>
-                    <Project path={"https://tinyman66.github.io/my-samurai-way/"} style={social} title={"Social Network"} description={"lorem jhdvjvhdvbdbvdv jhdghvhvdhvdjhv ddvd dhfdhbdvb"}/>
-                    <Project path={"/#"} style={todoList} title={"Todo List"} description={"lorem jhdvjvhdvbdbvdv jhdghvhvdhvdjhv"}/>
+            <Fade bottom>
+                <div className={`${styleContainer.container} ${style.projectsContainer}`}>
+                    <Title text={"My Projects"}/>
+                    <div className={style.projects}>
+                        <Project path={"https://tinyman66.github.io/my-samurai-way/"} style={social}
+                                 title={"Social Network"}
+                                 description={"lorem jhdvjvhdvbdbvdv jhdghvhvdhvdjhv ddvd dhfdhbdvb"}/>
+                        <Project path={"/#"} style={todoList} title={"Todo List"}
+                                 description={"lorem jhdvjvhdvbdbvdv jhdghvhvdhvdjhv"}/>
+                    </div>
                 </div>
-            </div>
+            </Fade>
         </div>
     );
 }

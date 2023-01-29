@@ -8,8 +8,13 @@
   background-color: $bgColor;
   padding: 50px 0;
 
-  .contactsContainer {
+  .fade {
     @include container();
+    @include flex(column, flex-start, center, wrap);
+  }
+
+  .contactsContainer {
+    //@include container();
     @include flex(column, flex-start, center, wrap);
 
     .form {
