@@ -84,6 +84,22 @@
         margin-top: 15px;
         border: none;
       }
+
+      .errorFormArea {
+        @extend .formArea;
+        border: 2px solid #b31232;
+      }
+
+      .errorMessageArea {
+        @extend .messageArea;
+        border: 2px solid #b31232;
+      }
+
+      .error {
+        @include text($TextFontFamily, 16px, 600, 1.8);
+        color: #b31232;
+        margin-bottom: 10px;
+      }
     }
   }
 }
