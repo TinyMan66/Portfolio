@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Contacts.module.scss';
 import {Title} from "../common/components/title/Title";
 import {Fade} from "react-awesome-reveal";
-import { useFormik } from 'formik'
+import {useFormik} from 'formik'
 import axios from "axios";
 
 export const Contacts = () => {
@@ -35,19 +35,22 @@ export const Contacts = () => {
 
             return errors
         },
-        onSubmit: values => {
-            alert(JSON.stringify(values))
-            console.log(values.name)
-
-            axios.post("http://localhost:3010/sendMessage", {
-                name: values.name,
-                email: values.email,
-                message: values.message,
-            }).then(() => {
-                alert("Your message has been sent")
+        onSubmit: (values, isSubmitting) => {
+            isSubmitting(true)
+            axios.get("https://gmail-nodejs-ten.vercel.app/sendMessage", {
+                params: {
+                    name: values.name,
+                    email : values.email,
+                    message: values.message,
+                }
+        }).
+            then(() => {
+                alert("Your message has been sent");
+                isSubmitting(false)
             })
             formik.resetForm()
         },
+        validateOnMount: true,
     })
 
     return (
@@ -88,10 +91,14 @@ export const Contacts = () => {
                                 <div className={style.error}>{formik.errors.message}</div>
                             ) : null}
 
-                            {/*<input type="text" className={style.formArea} placeholder="Name"/>*/}
-                            {/*<input type="text" className={style.formArea} placeholder="e-mail"/>*/}
-                            {/*<textarea className={style.messageArea} placeholder="Message"></textarea>*/}
-                            <button type="submit">send message</button>
+                            <button type="submit" disabled={!formik.isValid || formik.isSubmitting} className={!formik.isValid || formik.isSubmitting
+                                ? style.disabled
+                                : style.button}
+                            >
+                                send message
+                            </button>
+
+
                         </form>
                     </Fade>
                 </div>

@@ -78,11 +78,20 @@
         }
       }
 
-      button[type="submit"] {
+      .button[type="submit"] {
         @extend .button;
         align-self: center;
         margin-top: 15px;
         border: none;
+      }
+
+      .disabled {
+        @extend .button;
+        &:hover {
+          background-color: $bgSecondColor;
+          transition: all 0.3s ease-in-out 0s;
+        }
+        background-color: $bgSecondColor;
       }
 
       .errorFormArea {
