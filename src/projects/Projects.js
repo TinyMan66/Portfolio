@@ -21,11 +21,13 @@ export const Projects = () => {
                 <div className={style.projectsContainer}>
                     <Title text={"My Projects"}/>
                     <div className={style.projects}>
-                        <Project path={"https://tinyman66.github.io/my-samurai-way/"} style={social}
-                                 title={"Social Network"}
-                                 description={"lorem jhdvjvhdvbdbvdv jhdghvhvdhvdjhv ddvd dhfdhbdvb"}/>
-                        <Project path={"/#"} style={todoList} title={"Todo List"}
-                                 description={"lorem jhdvjvhdvbdbvdv jhdghvhvdhvdjhv"}/>
+                        <Project path={"https://github.com/TinyMan66/my-samurai-way"} style={social}
+                                 title={"SOCIAL NETWORK"}
+                                 description={"TS/REDUX/RESTAPI/THUNK/MATERIAL UI/UNIT TESTS"}/>
+                        <Project path={"https://github.com/TinyMan66/todolist"} style={todoList} title={"TODO LIST"}
+                                 description={"TS/REDUX/RESTAPI/THUNK/MATERIAL UI/UNIT TESTS"}/>
+                        <Project path={"https://github.com/JuliOgogo/friday-project"} style={todoList} title={"LEARN CARDS"}
+                                 description={"A COMMAND WORK. THE APP FOR LEARNING SOME CARDS"}/>
                     </div>
                 </div>
             </Fade>
