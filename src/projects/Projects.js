@@ -4,6 +4,7 @@ import {Project} from './project/Project';
 import {Title} from '../common/components/title/Title';
 import todoImage from '../assets/images/todolistFake.jpeg';
 import socialImage from '../assets/images/socialFake.png';
+import cardsImage from '../assets/images/cards.png';
 import {Fade} from "react-awesome-reveal";
 
 export const Projects = () => {
@@ -13,6 +14,9 @@ export const Projects = () => {
 
     const todoList = {
         backgroundImage: `url(${todoImage})`
+    };
+    const cardsApp = {
+        backgroundImage: `url(${cardsImage})`
     };
 
     return (
@@ -26,7 +30,7 @@ export const Projects = () => {
                                  description={"TS/REDUX/RESTAPI/THUNK/MATERIAL UI/UNIT TESTS"}/>
                         <Project path={"https://github.com/TinyMan66/todolist"} style={todoList} title={"TODO LIST"}
                                  description={"TS/REDUX/RESTAPI/THUNK/MATERIAL UI/UNIT TESTS"}/>
-                        <Project path={"https://github.com/JuliOgogo/friday-project"} style={todoList} title={"LEARN CARDS"}
+                        <Project path={"https://github.com/JuliOgogo/friday-project"} style={cardsApp} title={"LEARN CARDS"}
                                  description={"A COMMAND WORK. THE APP FOR LEARNING SOME CARDS"}/>
                     </div>
                 </div>
