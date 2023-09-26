@@ -4,8 +4,7 @@
 .mainBlock {
   //background-color: $bgColor;
   background-color: $bgSecondColor;
-  //height: 100vh;
-  height: fit-content;
+  min-height: 100vh;
   @include flex(row, center, center, nowrap);
   padding: 100px 0;
 
