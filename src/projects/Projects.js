@@ -5,19 +5,22 @@ import {Title} from '../common/components/title/Title';
 import todoImage from '../assets/images/todolistFake.jpeg';
 import socialImage from '../assets/images/socialFake.png';
 import cardsImage from '../assets/images/cards.png';
+import componentsImage from '../assets/images/componentsIMG.png';
 import {Fade} from "react-awesome-reveal";
 
 export const Projects = () => {
     const social = {
         backgroundImage: `url(${socialImage})`
     };
-
     const todoList = {
         backgroundImage: `url(${todoImage})`
     };
     const cardsApp = {
         backgroundImage: `url(${cardsImage})`
     };
+    const components = {
+        backgroundImage: `url(${componentsImage})`
+    }
 
     return (
         <div id="projects" className={style.projectsBlock}>
@@ -32,6 +35,8 @@ export const Projects = () => {
                                  description={"TS/REDUX/RESTAPI/THUNK/MATERIAL UI/UNIT TESTS"}/>
                         <Project path={"https://github.com/JuliOgogo/friday-project"} style={cardsApp} title={"LEARN CARDS"}
                                  description={"A COMMAND WORK. THE APP FOR LEARNING SOME CARDS"}/>
+                        <Project path={"https://github.com/TinyMan66/ignat-hws"} style={components} title={"COMPONENTS"}
+                                 description={"DIFFERENT COMPONENTS"}/>
                     </div>
                 </div>
             </Fade>
