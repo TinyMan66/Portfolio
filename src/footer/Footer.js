@@ -20,12 +20,12 @@ export const Footer = () => {
                     <Title titleStyle={style.name} text={"Diana Lipanova"}/>
                     <div className={style.socialContainer}>
                         <div className={style.socialIcon}>
-                            <a href="https://www.linkedin.com/in/diana-lipanova-b18395256/?locale=en_US">
+                            <a href="https://www.linkedin.com/in/diana-lipanova/">
                                 <FontAwesomeIcon icon={faLinkedin} className={style.icon}/>
                             </a>
                         </div>
                         <div className={style.socialIcon}>
-                            <a href="https://www.facebook.com/profile.php?id=100013503166823">
+                            <a href="https://www.facebook.com/lipanovadiana">
                                 <FontAwesomeIcon icon={faFacebook} className={style.icon}/>
                             </a>
                         </div>
